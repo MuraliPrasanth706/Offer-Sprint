@@ -323,3 +323,8 @@ details.card > summary::-webkit-details-marker { display: none; }
 .seg-solved[aria-pressed="true"] { background: color-mix(in srgb, var(--done) 16%, transparent); color: var(--done); font-weight: 600; }
 .seg-revise[aria-pressed="true"] { background: color-mix(in srgb, var(--partial) 16%, transparent); color: var(--partial); font-weight: 600; }
 @media (max-width: 760px) { .dsa-pats { max-width: none; flex-direction: row; overflow-x: auto; } .dsa-pats a { flex: none; } }
+
+/* ---------- loading skeleton ---------- */
+.sk { border-radius: 10px; background: var(--line-2); animation: sk 1.2s ease-in-out infinite; }
+@keyframes sk { 0%, 100% { opacity: 1; } 50% { opacity: .45; } }
+@media (prefers-reduced-motion: reduce) { .sk { animation: none; } }
